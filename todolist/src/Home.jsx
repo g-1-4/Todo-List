@@ -14,7 +14,7 @@ function Home() {
     const handleEdit = (id) => {
       axios.put('http://localhost:3001/update/' + id)
         .then(result => {
-          location.reload(); // Refresh the list after updating
+          location.reload(); // Refreshes the list after updating
         })
         .catch(err => console.log(err));
     };
